@@ -1,8 +1,8 @@
     header{
         position: sticky;
-        height: 100px;
+        height: 110px;
         color: rgb(14, 79, 99);
-        background-color: burlywood;
+        background-image: linear-gradient(to right,#5f939a, #d8ac9c, #eac8af);
         margin: 0%;
     }
     header h1{ 
@@ -11,18 +11,39 @@
         padding: 20px;
         
     }
+     
+    main{
+        background-color: #eac8af ;
+        margin-bottom: 0%;
 
-    main p{
-        text-align: center;
-        color: rgb(13, 54, 66) ;
+    }
+    #first{
+        color: #5f939a;
+        text-align: left ;
+        margin-left: 5%;
+
+    }
+    #second{
+        color: #1b2021 ;
+        text-align: left ;
+        margin-left: 5%
+
+    }
+    h3,h1{
         font-size: 30px;
+        padding-top: 3%;
+    }
+    .work{
+        font-size: 20px;
+    }
+    .series{
+        font-size: 20px;
+        padding-bottom:5% ;
     }
 
     footer{
         height:30px ;
         text-align: center ;
         line-height: 30px ;
-        margin-top: 20%;
-
     }
 
