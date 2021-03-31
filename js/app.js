@@ -26,22 +26,24 @@ function question1(){
 }
 question1();
 
-
-let sistersBrothers = prompt('Do I have any sisters or brothers?');
-sistersBrothers = sistersBrothers.toLowerCase();
-
-if (sistersBrothers === 'yes' || sistersBrothers === 'y') {
-    // console.log('Great! Your answer is correct.');
-    alert('Great! Your answer is correct.');
-    score++;
-} else if (sistersBrothers === 'no' || sistersBrothers === 'n') {
-    // console.log('Your answer is not correct');
-    alert('Your answer is not correct');
-} else {
-    // console.log('Please anwser with yes or no'); 
-    alert('Please anwser with yes/y or no/n');
-
+function question2(){
+    let sistersBrothers = prompt('Do I have any sisters or brothers?');
+    sistersBrothers = sistersBrothers.toLowerCase();
+    
+    if (sistersBrothers === 'yes' || sistersBrothers === 'y') {
+        // console.log('Great! Your answer is correct.');
+        alert('Great! Your answer is correct.');
+        score++;
+    } else if (sistersBrothers === 'no' || sistersBrothers === 'n') {
+        // console.log('Your answer is not correct');
+        alert('Your answer is not correct');
+    } else {
+        // console.log('Please anwser with yes or no'); 
+        alert('Please anwser with yes/y or no/n');
+    
+    }
 }
+question2();
 
 
 let likeMusic = prompt('Do I like music?');
