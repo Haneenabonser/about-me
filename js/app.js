@@ -84,24 +84,27 @@ function question4(){
 
 question4();
 
-
-let wearingColors = prompt('Do I like wearing colors?');
-wearingColors = wearingColors.toLowerCase();
-
-
-if (wearingColors === 'yes' || wearingColors === 'y') {
-    // console.log('Your answer is not correct');
-    alert('Your answer is not correct');
-} else if (wearingColors === 'no' || wearingColors === 'n') {
-    // console.log('Great! Your answer is correct.');
-    alert('Great! Your answer is correct.');
-    score++;
-} else {
-    //  console.log('Please anwser with yes or no'); 
-    alert('Please anwser with yes/y or no/n');
-
+function question5(){
+    let wearingColors = prompt('Do I like wearing colors?');
+    wearingColors = wearingColors.toLowerCase();
+    
+    
+    if (wearingColors === 'yes' || wearingColors === 'y') {
+        // console.log('Your answer is not correct');
+        alert('Your answer is not correct');
+    } else if (wearingColors === 'no' || wearingColors === 'n') {
+        // console.log('Great! Your answer is correct.');
+        alert('Great! Your answer is correct.');
+        score++;
+    } else {
+        //  console.log('Please anwser with yes or no'); 
+        alert('Please anwser with yes/y or no/n');
+    
+    }
+    
 }
 
+question5();
 let guessNumber = null;
 for (let i = 0; i < 4; i++) {
     guessNumber = prompt('Guess a number between 0 and 10?');
