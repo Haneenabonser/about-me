@@ -133,7 +133,8 @@ function question6(){
 question6();
 
 //question7
-
+function question7()
+{
 let favoriteColor = null;
 let colors = ['blue', 'black', 'purple'];
 for (let i = 1; i < 6; i++) {
@@ -152,7 +153,9 @@ for (let i = 1; i < 6; i++) {
 
     }
 }
+}
 
+question7();
 alert('We hope you enjoy the game ' + userName + ', your score is ' + score);
 
 
