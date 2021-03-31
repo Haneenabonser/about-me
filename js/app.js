@@ -96,7 +96,7 @@ if (wearingColors === 'yes' || wearingColors === 'y') {
 
 }
 
-let  guessNumber = null;
+let guessNumber = null;
 for (let i = 0; i < 4; i++) {
     guessNumber = prompt('Guess a number between 0 and 10?');
     guessNumber = parseInt(guessNumber);
@@ -110,7 +110,7 @@ for (let i = 0; i < 4; i++) {
     } else if (guessNumber > 5) {
         alert('This is too high');
     }
-    if (i ===3){
+    if (i === 3) {
         alert('the correct answer is 5')
     }
 }
@@ -118,7 +118,7 @@ for (let i = 0; i < 4; i++) {
 
 
 
-let favoriteColor = null; 
+let favoriteColor = null;
 let colors = ['blue', 'black', 'purple'];
 for (let i = 1; i < 6; i++) {
     favoriteColor = prompt('What do you think my favorite color is?\n red\nblack\nwhite\npink\nblue\npurple?');
@@ -131,7 +131,7 @@ for (let i = 1; i < 6; i++) {
     else {
         prompt('Guess another color');
     }
-    if ( i===5){
+    if (i === 6) {
         alert('You are run out of attempts!');
 
     }
