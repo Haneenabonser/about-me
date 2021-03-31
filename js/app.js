@@ -63,23 +63,26 @@ if (likeMusic === 'yes' || likeMusic === 'y') {
 }
 
 question3();
-let watchFootball = prompt('Do I watch football matches?');
-watchFootball = watchFootball.toLowerCase();
-
-
-if (watchFootball === 'yes' || watchFootball === 'y') {
-    // console.log('Great! Your answer is correct.');
-    alert('Great! Your answer is correct.');
-    score++;
-} else if (watchFootball === 'no' || watchFootball === 'n') {
-    // console.log('Your answer is not correct');
-    alert('Your answer is not correct');
-} else {
-    //  console.log('Please anwser with yes or no'); 
-    alert('Please anwser with yes/y or no/n');
-
+function question4(){
+    let watchFootball = prompt('Do I watch football matches?');
+    watchFootball = watchFootball.toLowerCase();
+    
+    
+    if (watchFootball === 'yes' || watchFootball === 'y') {
+        // console.log('Great! Your answer is correct.');
+        alert('Great! Your answer is correct.');
+        score++;
+    } else if (watchFootball === 'no' || watchFootball === 'n') {
+        // console.log('Your answer is not correct');
+        alert('Your answer is not correct');
+    } else {
+        //  console.log('Please anwser with yes or no'); 
+        alert('Please anwser with yes/y or no/n');
+    
+    }
 }
 
+question4();
 
 
 let wearingColors = prompt('Do I like wearing colors?');
