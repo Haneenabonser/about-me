@@ -45,11 +45,9 @@ function question2(){
 }
 question2();
 
-
+function question3(){
 let likeMusic = prompt('Do I like music?');
 likeMusic = likeMusic.toLowerCase();
-
-
 if (likeMusic === 'yes' || likeMusic === 'y') {
     // console.log('Great! Your answer is correct.');
     alert('Great! Your answer is correct.');
@@ -62,8 +60,9 @@ if (likeMusic === 'yes' || likeMusic === 'y') {
     alert('Please anwser with yes/y or no/n');
 
 }
+}
 
-
+question3();
 let watchFootball = prompt('Do I watch football matches?');
 watchFootball = watchFootball.toLowerCase();
 
