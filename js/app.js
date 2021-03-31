@@ -8,21 +8,23 @@ while (!userName) {
 alert('Hello ' + userName + '\nWelcome to our website, let\'s have some fun!')
 
 let score = 0;
-
-let foodLover = prompt('Am I a food lover (foodie person)?');
-foodLover = foodLover.toLowerCase();
-
-if (foodLover === 'yes' || foodLover === 'y') {
-    // console.log('Great! Your answer is correct.');
-    alert('Great! Your answer is correct.');
-    score++;
-} else if (foodLover === 'no' || foodLover === 'n') {
-    // console.log('Your answer is not correct');
-    alert('Your answer is not correct');
-} else {
-    //  console.log('Please anwser with yes or no');
-    alert('Please anwser with yes/y or no/n');
+function question1(){
+    let foodLover = prompt('Am I a food lover (foodie person)?');
+    foodLover = foodLover.toLowerCase();
+    
+    if (foodLover === 'yes' || foodLover === 'y') {
+        // console.log('Great! Your answer is correct.');
+        alert('Great! Your answer is correct.');
+        score++;
+    } else if (foodLover === 'no' || foodLover === 'n') {
+        // console.log('Your answer is not correct');
+        alert('Your answer is not correct');
+    } else {
+        //  console.log('Please anwser with yes or no');
+        alert('Please anwser with yes/y or no/n');
+    }
 }
+question1();
 
 
 let sistersBrothers = prompt('Do I have any sisters or brothers?');
