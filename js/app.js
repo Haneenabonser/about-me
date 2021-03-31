@@ -8,6 +8,7 @@ while (!userName) {
 alert('Hello ' + userName + '\nWelcome to our website, let\'s have some fun!')
 
 let score = 0;
+//question1
 function question1(){
     let foodLover = prompt('Am I a food lover (foodie person)?');
     foodLover = foodLover.toLowerCase();
@@ -25,7 +26,7 @@ function question1(){
     }
 }
 question1();
-
+//question2
 function question2(){
     let sistersBrothers = prompt('Do I have any sisters or brothers?');
     sistersBrothers = sistersBrothers.toLowerCase();
@@ -44,7 +45,7 @@ function question2(){
     }
 }
 question2();
-
+//question3
 function question3(){
 let likeMusic = prompt('Do I like music?');
 likeMusic = likeMusic.toLowerCase();
@@ -63,6 +64,8 @@ if (likeMusic === 'yes' || likeMusic === 'y') {
 }
 
 question3();
+
+//question4
 function question4(){
     let watchFootball = prompt('Do I watch football matches?');
     watchFootball = watchFootball.toLowerCase();
@@ -83,7 +86,7 @@ function question4(){
 }
 
 question4();
-
+//question5
 function question5(){
     let wearingColors = prompt('Do I like wearing colors?');
     wearingColors = wearingColors.toLowerCase();
@@ -105,27 +108,31 @@ function question5(){
 }
 
 question5();
-let guessNumber = null;
-for (let i = 0; i < 4; i++) {
-    guessNumber = prompt('Guess a number between 0 and 10?');
-    guessNumber = parseInt(guessNumber);
-    if (guessNumber === 5) {
-        alert('Great! you are correct');
-        score++;
-        break;
-    } else if (guessNumber < 5) {
-        alert('This is too low');
-
-    } else if (guessNumber > 5) {
-        alert('This is too high');
+//question6
+function question6(){
+    let guessNumber = null;
+    for (let i = 0; i < 4; i++) {
+        guessNumber = prompt('Guess a number between 0 and 10?');
+        guessNumber = parseInt(guessNumber);
+        if (guessNumber === 5) {
+            alert('Great! you are correct');
+            score++;
+            break;
+        } else if (guessNumber < 5) {
+            alert('This is too low');
+    
+        } else if (guessNumber > 5) {
+            alert('This is too high');
+        }
+        if (i === 3) {
+            alert('the correct answer is 5')
+        }
     }
-    if (i === 3) {
-        alert('the correct answer is 5')
-    }
+    
 }
+question6();
 
-
-
+//question7
 
 let favoriteColor = null;
 let colors = ['blue', 'black', 'purple'];
