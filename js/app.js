@@ -96,48 +96,33 @@ if (wearingColors === 'yes' || wearingColors === 'y') {
 
 }
 
-let number=5;
-let guessNumber = prompt('Guess a number between 0 and 10?');
-guessNumber = parseInt(guessNumber);
-for (let i = 0; i < 3; i++) {
-    if (guessNumber === number) {
+let  guessNumber = null;
+for (let i = 0; i < 4; i++) {
+    guessNumber = prompt('Guess a number between 0 and 10?');
+    guessNumber = parseInt(guessNumber);
+    if (guessNumber === 5) {
         alert('Great! you are correct');
         score++;
         break;
-    } else if (guessNumber < number) {
-        prompt('This is too low, try another number');
-    } else if (guessNumber > number) {
-        prompt('This is too high, try another number');
+    } else if (guessNumber < 5) {
+        alert('This is too low');
+
+    } else if (guessNumber > 5) {
+        alert('This is too high');
+    }
+    if (i ===3){
+        alert('the correct answer is 5')
     }
 }
-alert('The correct number is 5');
-
-// let number=5;
-// let maxAttempts=4; 
-// let tries=0;
-// let guessNumber=prompt('Guess a number between 0 and 10?');
-// while (tries<=maxAttempts){ 
-//     if (guessNumber === number) {
-//         alert('Great! you are correct');
-//         score++;
-//         break;
-//     } else if (guessNumber < number) {
-//         prompt('This is too low, try another number');
-//         tries++;
-//     } else if (guessNumber > number) {
-//         prompt('This is too high, try another number');
-//         tries++
-//     }else if( tries > maxAttempts){
-//         alert('You have no more tries left.');
-//     }
 
 
 
 
-let favoriteColor = prompt('What do you think my favorite color is?\n red\nblack\nwhite\npink\nblue\npurple');
-favoriteColor = favoriteColor.toLowerCase();
+let favoriteColor = null; 
 let colors = ['blue', 'black', 'purple'];
 for (let i = 1; i < 6; i++) {
+    favoriteColor = prompt('What do you think my favorite color is?\n red\nblack\nwhite\npink\nblue\npurple?');
+    favoriteColor = favoriteColor.toLowerCase();
     if (favoriteColor === colors[0] || favoriteColor === colors[1] || favoriteColor === colors[2]) {
         alert('Great! your answer is correct');
         score++;
@@ -146,7 +131,12 @@ for (let i = 1; i < 6; i++) {
     else {
         prompt('Guess another color');
     }
+    if ( i===5){
+        alert('You are run out of attempts!');
+
+    }
 }
-alert('You are run out of attempts!');
 
 alert('We hope you enjoy the game ' + userName + ', your score is ' + score);
+
+
