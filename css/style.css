@@ -1,29 +1,35 @@
+body{
+        background-image: url("https://images.hdqwalls.com/wallpapers/purple-nebula-4k-lu.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(8px);
+        /* border: 3px solid white; */
+
+
+    }
     header{
         position: sticky;
         height: 110px;
-        color: rgb(14, 79, 99);
-        background-image: linear-gradient(to right,#5f939a, #d8ac9c, #eac8af);
-        margin: 0%;
+        color: rgb(245, 253, 255);
     }
     header h1{ 
         text-align: center;
         font-size: 50px;
+        font-weight: bold;
         padding: 20px;
+        font-family: 'Kiwi Maru', serif;
         
     }
-     
-    main{
-        background-color: #eac8af ;
-        margin-bottom: 0%;
-
-    }
-    #first{
-        color: #5f939a;
+    #first{ 
+        font-family: 'Kiwi Maru', serif;
+        color: #1b2021;
         text-align: left ;
         margin-left: 5%;
 
     }
     #second{
+        font-family: 'Kiwi Maru', serif;
         color: #1b2021 ;
         text-align: left ;
         margin-left: 5%

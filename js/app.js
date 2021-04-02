@@ -8,108 +8,87 @@ while (!userName) {
 alert('Hello ' + userName + '\nWelcome to our website, let\'s have some fun!')
 
 let score = 0;
-//question1
-function question1(){
+
+function question1() {
     let foodLover = prompt('Am I a food lover (foodie person)?');
     foodLover = foodLover.toLowerCase();
-    
+
     if (foodLover === 'yes' || foodLover === 'y') {
-        // console.log('Great! Your answer is correct.');
         alert('Great! Your answer is correct.');
         score++;
     } else if (foodLover === 'no' || foodLover === 'n') {
-        // console.log('Your answer is not correct');
         alert('Your answer is not correct');
     } else {
-        //  console.log('Please anwser with yes or no');
+
         alert('Please anwser with yes/y or no/n');
     }
 }
 question1();
-//question2
-function question2(){
+function question2() {
     let sistersBrothers = prompt('Do I have any sisters or brothers?');
     sistersBrothers = sistersBrothers.toLowerCase();
-    
+
     if (sistersBrothers === 'yes' || sistersBrothers === 'y') {
-        // console.log('Great! Your answer is correct.');
         alert('Great! Your answer is correct.');
         score++;
     } else if (sistersBrothers === 'no' || sistersBrothers === 'n') {
-        // console.log('Your answer is not correct');
         alert('Your answer is not correct');
     } else {
-        // console.log('Please anwser with yes or no'); 
         alert('Please anwser with yes/y or no/n');
-    
+
     }
 }
 question2();
-//question3
-function question3(){
-let likeMusic = prompt('Do I like music?');
-likeMusic = likeMusic.toLowerCase();
-if (likeMusic === 'yes' || likeMusic === 'y') {
-    // console.log('Great! Your answer is correct.');
-    alert('Great! Your answer is correct.');
-    score++;
-} else if (likeMusic === 'no' || likeMusic === 'n') {
-    // console.log('Your answer is not correct');
-    alert('Your answer is not correct');
-} else {
-    //  console.log('Please anwser with yes or no');
-    alert('Please anwser with yes/y or no/n');
+function question3() {
+    let likeMusic = prompt('Do I like music?');
+    likeMusic = likeMusic.toLowerCase();
+    if (likeMusic === 'yes' || likeMusic === 'y') {
+        alert('Great! Your answer is correct.');
+        score++;
+    } else if (likeMusic === 'no' || likeMusic === 'n') {
+        alert('Your answer is not correct');
+    } else {
+        alert('Please anwser with yes/y or no/n');
 
-}
+    }
 }
 
 question3();
 
-//question4
-function question4(){
+function question4() {
     let watchFootball = prompt('Do I watch football matches?');
     watchFootball = watchFootball.toLowerCase();
-    
-    
     if (watchFootball === 'yes' || watchFootball === 'y') {
-        // console.log('Great! Your answer is correct.');
         alert('Great! Your answer is correct.');
         score++;
     } else if (watchFootball === 'no' || watchFootball === 'n') {
-        // console.log('Your answer is not correct');
         alert('Your answer is not correct');
     } else {
-        //  console.log('Please anwser with yes or no'); 
         alert('Please anwser with yes/y or no/n');
-    
+
     }
 }
 
 question4();
-//question5
-function question5(){
+function question5() {
     let wearingColors = prompt('Do I like wearing colors?');
     wearingColors = wearingColors.toLowerCase();
-    
-    
+
+
     if (wearingColors === 'yes' || wearingColors === 'y') {
-        // console.log('Your answer is not correct');
         alert('Your answer is not correct');
     } else if (wearingColors === 'no' || wearingColors === 'n') {
-        // console.log('Great! Your answer is correct.');
         alert('Great! Your answer is correct.');
         score++;
     } else {
-        //  console.log('Please anwser with yes or no'); 
         alert('Please anwser with yes/y or no/n');
-    
+
     }
-    
+
 }
 
 question5();
-//question6
-function question6(){
+function question6() {
     let guessNumber = null;
     for (let i = 0; i < 4; i++) {
         guessNumber = prompt('Guess a number between 0 and 10?');
@@ -120,7 +99,7 @@ function question6(){
             break;
         } else if (guessNumber < 5) {
             alert('This is too low');
-    
+
         } else if (guessNumber > 5) {
             alert('This is too high');
         }
@@ -128,31 +107,29 @@ function question6(){
             alert('the correct answer is 5')
         }
     }
-    
+
 }
 question6();
 
-//question7
-function question7()
-{
-let favoriteColor = null;
-let colors = ['blue', 'black', 'purple'];
-for (let i = 1; i < 6; i++) {
-    favoriteColor = prompt('What do you think my favorite color is?\n red\nblack\nwhite\npink\nblue\npurple?');
-    favoriteColor = favoriteColor.toLowerCase();
-    if (favoriteColor === colors[0] || favoriteColor === colors[1] || favoriteColor === colors[2]) {
-        alert('Great! your answer is correct');
-        score++;
-        break;
-    }
-    else {
-        prompt('Guess another color');
-    }
-    if (i === 6) {
-        alert('You are run out of attempts!');
+function question7() {
+    let favoriteColor = null;
+    let colors = ['blue', 'black', 'purple'];
+    for (let i = 1; i < 6; i++) {
+        favoriteColor = prompt('What do you think my favorite color is?\n red\nblack\nwhite\npink\nblue\npurple?');
+        favoriteColor = favoriteColor.toLowerCase();
+        if (favoriteColor === colors[0] || favoriteColor === colors[1] || favoriteColor === colors[2]) {
+            alert('Great! your answer is correct');
+            score++;
+            break;
+        }
+        else {
+            prompt('Guess another color');
+        }
+        if (i === 6) {
+            alert('You are run out of attempts!');
 
+        }
     }
-}
 }
 
 question7();
